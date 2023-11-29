@@ -53,8 +53,8 @@ export default () => {
     <div>
     <AnimationRevealPage>
       <Hero
-        heading={<>Ceci est un exemple <HighlightedText>DE TEXTES</HighlightedText></>}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        heading={<><HighlightedText></HighlightedText> <HighlightedText>SUPER ASSISTANTS IA</HighlightedText> POUR SOLOPRENEURS</>}
+        description="On combine Notion, l'IA et notre sauce magique de développeur pour te créer un super assistant qui te donne l'impression d'avoir 10 nouveaux employés"
         imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
         imageDecoratorBlob={true}
@@ -92,7 +92,7 @@ export default () => {
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
 
-        <div className="calendar-section">      
+        {/* <div className="calendar-section">      
           <div className="calendar-wrapper">
           <h1>Plus de Exemple et de Exemple, Aujourd'hui</h1> 
           <p className="head">Voir FlowPilot en action</p>
@@ -154,22 +154,10 @@ export default () => {
                 <p key={number} className={number < today+6 && number > today+1 ? "":"invisible" } onClick={number < today+6 && number > today+1 ? ()=> toggleBooking(number) : null} >{number}</p>
               ))}
                  
+                </div>
               </div>
-
-
-
-
-
-              </div>
-
-              
-
-              <div>
-
-              </div>
-
-            
-
+            <div>
+          </div> 
 
             </div>
             <p className="calendar-footer">Powered by FlowPilot</p>
@@ -177,6 +165,8 @@ export default () => {
           
           </div>
         </div>
+        */}
+
       {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
       {/* <TabGrid
         heading={
